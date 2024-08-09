@@ -1,38 +1,46 @@
 # Safaricom-stock-price-predictor
 Stock Predictor
 Stock Predictor is an offline web application designed to analyze and visualize historical stock data for Safaricom (SCOM) stock. This project was developed as part of an academic endeavor to explore data analysis and visualization techniques in the context of financial markets.
+
 Project Goals
 The main goals of this project are:
 1.	To provide users with a clear and intuitive way to understand Safaricom's stock performance over time.
 2.	To calculate and display key statistical metrics and technical indicators, such as moving averages, to aid in stock market analysis.
 3.	To create an interactive and user-friendly web application that can be used by investors, analysts, and students alike.
+   
 Key Features
 •	Historical stock data visualization
 •	100-day and 200-day moving average calculations
 •	Statistical analysis of stock performance metrics (high, low, open, close, volume)
 •	Interactive graphs and charts for better data exploration
+
 Technologies Used
 •	Python
 •	Django web framework
 •	Pandas for data manipulation
 •	Matplotlib for data visualization
 •	HTML/CSS for web page structure and styling
+
 Setup and Installation
 Prerequisites
 •	Python (version 3.9 or later)
 •	Git (for version control)
+
 Installation Steps
 1.	Clone the repository: 
 git clone https://github.com/oomollo/Safaricom-stock-price-predictor.git
-2.	Create a virtual environment and activate it: 
+
+3.	Create a virtual environment and activate it: 
 python -m venv myenv
 source myenv/Scripts/activate  # On Windows
-3.	Install the required dependencies: 
+
+4.	Install the required dependencies: 
 pip install -r requirements.txt
 
-4.	Navigate to the project directory: 
+5.	Navigate to the project directory: 
 cd stock_predictor
-5.	Apply the database migrations: 
+
+6.	Apply the database migrations: 
 
 python manage.py migrate
 6.	Start the development server: 
