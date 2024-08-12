@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safaricom Stock Data</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'stocks/style.css' %}">
+</head>
+<body>
+    <h1>Safaricom Stock Data</h1>
+    <div class="navbar">
+        <a href="{% url 'stock_data' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </div>
+    
+    <div class="plot-container">
+        {% if error %}
+            <p class="error">Error: {{ error }}</p>
+        {% elif plots %}
+            <h2>Statistics Table and Stock Graphs</h2>
+            <img src="data:image/png;base64,{{ plots }}" alt="Stock Graphs">
+        {% else %}
+            <p>No plots available.</p>
+        {% endif %}
+    </div>
+    
+    <div class="footer">
+        &copy; 2024 Stock Predictor. All rights reserved.
+    </div>
+</body>
+</html>
